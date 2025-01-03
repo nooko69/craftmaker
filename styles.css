@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;  /* Couleur de fond verte du header */
+  background-color: rgba(88,168,140,1);  /* Couleur de fond verte du header */
   padding: 20px;
   text-align: center;
 }
@@ -19,7 +19,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
-  color: #4CAF50;  /* Couleur du texte de la bannière */
+  color: rgba(88,168,140,1);  /* Couleur du texte de la bannière */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 .product {
-  border: 1px solid #4CAF50;  /* Couleur des bordures des produits */
+  border: 1px solid rgba(88,168,140,1);  /* Couleur des bordures des produits */
   padding: 16px;
   margin: 16px;
   text-align: center;
@@ -46,7 +46,7 @@ header {
 .cta {
   margin-top: 32px;
   padding: 20px;
-  background-color: #4CAF50;  /* Couleur de fond des appels à l'action */
+  background-color: rgba(88,168,140,1);  /* Couleur de fond des appels à l'action */
   color: #FFFFFF;
   text-align: center;
 }
