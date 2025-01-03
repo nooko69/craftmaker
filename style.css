@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-  font-family: 'MinecraftFont', Arial, sans-serif;  /* Utilise une police spécifique si disponible */
+  font-family: 'Press Start 2P', cursive;  /* Utilisation de la police pixelisée */
   background-color: #333;  /* Couleur de fond gris foncé */
   color: #FFFFFF;  /* Couleur de texte blanche */
   margin: 0;
@@ -54,8 +56,9 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
+
 .logo {
-  width: 100px; /* Ajustez cette valeur pour obtenir la taille souhaitée */
-  height: auto; /* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
+  width: 100px;
+  height: auto;
   margin-bottom: 20px;
 }
