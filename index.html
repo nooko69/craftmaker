@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropshipping Platform</title>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cart {
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur notre Plateforme de Dropshipping</h1>
+  <div id="root"></div>
+
+  <script>
+    const products = [
+      { id: 1, name: 'Produit 1', price: 15, description: 'Description du produit 1', image: 'https://via.placeholder.com/150' },
+      { id: 2, name: 'Produit 2', price: 25, description: 'Description du produit 2', image: 'https://via.placeholder.com/150' }
+    ];
+
+    const cart = [];
+
+    function addToCart(product) {
+      cart.push(product);
+      alert(`${product.name} a été ajouté au panier.`);
+      renderCart();
+    }
+
+    function renderProducts() {
+      const productContainer = document.createElement('div');
+      productContainer.className = 'product-list';
+
+      products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.className = 'product';
+
+        const productName = document.createElement('h2');
+        productName.textContent = product.name;
+
+        const productImage = document.createElement('img');
+        productImage.src = product.image;
+        productImage.alt = product.name;
+
+        const productDescription = document.createElement('p');
+        productDescription.textContent = product.description;
+
+        const productPrice = document.createElement('p');
+        productPrice.textContent = `Prix: ${product.price}€`;
+
+        const addToCartButton = document.createElement('button');
+        addToCartButton.textContent = 'Ajouter au panier';
+        addToCartButton.onclick = () => addToCart(product);
+
+        productDiv.appendChild(productName);
+        productDiv.appendChild(productImage);
+        productDiv.appendChild(productDescription);
+        productDiv.appendChild(productPrice);
+        productDiv.appendChild(addToCartButton);
+
+        productContainer.appendChild(productDiv);
+      });
+
+      document.getElementById('root').appendChild(productContainer);
+    }
+
+    function renderCart() {
+      const cartContainer = document.querySelector('.cart');
+      if (!cartContainer) {
+        const newCartContainer = document.createElement('div');
+        newCartContainer.className = 'cart';
+
+        const cartTitle = document.createElement('h2');
+        cartTitle.textContent = 'Panier';
+
+        newCartContainer.appendChild(cartTitle);
+
+        const cartList = document.createElement('ul');
+        cartList.className = 'cart-list';
+        newCartContainer.appendChild(cartList);
+
+        document.getElementById('root').appendChild(newCartContainer);
+      } else {
+        const cartList = cartContainer.querySelector('.cart-list');
+        cartList.innerHTML = '';
+
+        if (cart.length === 0) {
+          const emptyCartMessage = document.createElement('p');
+          emptyCartMessage.textContent = 'Votre panier est vide';
+          cartList.appendChild(emptyCartMessage);
+        } else {
+          cart.forEach(item => {
+            const cartItem = document.createElement('li');
+            cartItem.textContent = `${item.name} - ${item.price}€`;
+            cartList.appendChild(cartItem);
+          });
+        }
+      }
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
