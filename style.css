@@ -1,13 +1,13 @@
 body {
   font-family: 'MinecraftFont', Arial, sans-serif;  /* Utilise une police spécifique si disponible */
-  background-color: #1c1c1c;  /* Couleur de fond sombre */
-  color: #fff;  /* Couleur de texte claire */
+  background-color: #333;  /* Couleur de fond gris foncé */
+  color: #FFFFFF;  /* Couleur de texte blanche */
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;  /* Couleur de fond du header */
+  background-color: #4CAF50;  /* Couleur de fond verte du header */
   padding: 20px;
   text-align: center;
 }
@@ -23,7 +23,7 @@ header {
 
 .products {
   padding: 40px 20px;
-  background-color: #1c1c1c;
+  background-color: #333;  /* Couleur de fond des sections */
 }
 
 .product {
@@ -31,10 +31,9 @@ header {
   padding: 16px;
   margin: 16px;
   text-align: center;
-  background-color: #333;  /* Couleur de fond des produits */
+  background-color: #444;  /* Couleur de fond des produits légèrement plus claire */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(33.333% - 32px);
-  margin: 16px;
 }
 
 .product img {
@@ -45,18 +44,4 @@ header {
 .cta {
   margin-top: 32px;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-}
-
-.cta a {
-  color: #4CAF50;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.logo {
-  width: 150px;
-  margin-bottom: 20px;
-}
+  background-color: #4CAF50;
