@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Press Start 2P', cursive;  /* Utilisation de la police pixelisée */
-  background-color: #333;  /* Couleur de fond gris foncé */
+  background-color: rgba(51, 41, 52, 1);  /* Couleur de fond du logo */
   color: #FFFFFF;  /* Couleur de texte blanche */
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ header {
 
 .products {
   padding: 40px 20px;
-  background-color: #333;  /* Couleur de fond des sections */
+  background-color: rgba(51, 41, 52, 1);  /* Couleur de fond des sections */
 }
 
 .product {
