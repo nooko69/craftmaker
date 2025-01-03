@@ -44,7 +44,16 @@ header {
 .cta {
   margin-top: 32px;
   padding: 20px;
-  background-color: #4CAF50;
+  background-color: #4CAF50;  /* Couleur de fond des appels à l'action */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.cta a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
 .logo {
   width: 100px; /* Ajustez cette valeur pour obtenir la taille souhaitée */
   height: auto; /* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
