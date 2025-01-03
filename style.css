@@ -56,9 +56,3 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
-
-.logo {
-  width: 100px; /* Ajustez cette valeur pour obtenir la taille souhaitée */
-  height: auto; /* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
-  margin-bottom: 20px;
-}
